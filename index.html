@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <script src="libs/p5.min.js"></script>
+    <script src="utility.js"></script>
+    <script src="tictactoe.js"></script>
+    <script src="agents.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+  	<div id = 'game'>
+    	<script src="sketch.js"></script>
+    </div>
+
+  	<div id = 'details'>
+  		<p id = 'time'></p>
+  		<p id = 'result'></p>
+  		<form>
+  			<span>Game Mode:  </span>
+  			<select id = 'gameMode'>
+  				<option>Player</option>
+  				<option>MinMax</option>
+  				<option>AlphaBeta</option>
+  				<option>AlphaBetaLookup</option>
+  				<option>SmarterAlphaBeta</option>
+  				<option>DiverseAlphaBeta</option>
+  			</select>
+  			<br><br>
+  			<span>Play as:  </span>
+  			<select id = 'playerCharacter'>
+  				<option>X</option>
+  				<option>O</option>
+  			</select>
+  			<br><br>
+  		<input type="button" onclick="newGame()" value="New Game">
+  		</form>
+  	</div>
+
+  </body>
+</html>
