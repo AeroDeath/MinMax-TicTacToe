@@ -14,7 +14,7 @@ function setup(){
 function draw(){
 	background(0);
 	var now = new Date();
-	document.getElementById("time").innerHTML = "Time Taken : " + AITime + " milliseconds";
+	document.getElementById("time").innerHTML = "Total Time Taken by AI : " + AITime + " milliseconds";
 	displayResult(game);
 	drawBoard();
 	game.show();

@@ -11,6 +11,7 @@ function TicTacToe(){
 	];
 
 	this.newGame = function(){
+		//Start a new game resetting board to original conditions
 		this.turn = 1;
 		this.playerMove = 'X';
 		this.isGameOver = false;
@@ -23,9 +24,9 @@ function TicTacToe(){
 	}
 
 	this.makeMove = function(row, col){
+
+		//Make a move if given row and column are valid and if move is legal
 		if(row<3 && col<3 && row>=0 && col>=0){
-			console.log(this.board);
-			console.log(row);
 			if(this.board[row][col] == '-'){
 				this.board[row][col] = this.playerMove;
 				this.turn += 1;
@@ -77,6 +78,7 @@ function TicTacToe(){
 	}
 
 	this.show = function(){
+		// draw the boards entities
 		for(var row = 0; row<3; row+= 1){
 			for(var col = 0; col<3; col+= 1){
 				centre = [WIDTH * col/3 + WIDTH/6, HEIGHT * row/3 + HEIGHT/6];

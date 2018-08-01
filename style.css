@@ -1,3 +1,11 @@
+header{
+	width: 100%;
+	text-align: center;
+	font-size: 36;
+	font-family: sans-serif;
+	padding-bottom: 30px;
+}
+
 #game{
 	float: left;
 	padding-right: 20px;
