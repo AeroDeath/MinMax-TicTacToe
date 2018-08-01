@@ -22,9 +22,11 @@ function draw(){
 
 function mousePressed(){
 	if(game.playerMove != AI.AIplayer){
-		var row_col = get_row_col(mouseX, mouseY);
-		game.makeMove(row_col[0], row_col[1]);
-		game.checkGameOver();
+		if(game.isGameOver == false){
+			var row_col = get_row_col(mouseX, mouseY);
+			game.makeMove(row_col[0], row_col[1]);
+			game.checkGameOver();
+		}
 		if(game.playerMove == AI.AIplayer && game.isGameOver == false){
 			var start = new Date();
 			var best_move = AI.bestMove(game.board, game.playerMove);
